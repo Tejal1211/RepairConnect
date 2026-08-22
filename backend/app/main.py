@@ -36,6 +36,19 @@ STATIC_DIR = os.path.join(os.path.dirname(__file__), "..", "static")
 os.makedirs(os.path.join(STATIC_DIR, "processed"), exist_ok=True)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
+
+@app.middleware("http")
+async def normalize_vercel_path(request: Request, call_next):
+    path = request.scope["path"]
+    for prefix in ("/api/index.py", "/api/index", "/api"):
+        if path == prefix:
+            request.scope["path"] = "/"
+            break
+        if path.startswith(prefix + "/"):
+            request.scope["path"] = path[len(prefix):]
+            break
+    return await call_next(request)
+
 # ---- Routers ------------------------------------------------------------
 app.include_router(analysis.router)
 app.include_router(reports.router)
