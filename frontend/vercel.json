@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/health", "destination": "https://backend-amber-iota-80.vercel.app/health" },
+    { "source": "/api/:path*", "destination": "https://backend-amber-iota-80.vercel.app/api/:path*" },
+    { "source": "/static/:path*", "destination": "https://backend-amber-iota-80.vercel.app/static/:path*" }
+  ]
+}
