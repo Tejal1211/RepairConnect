@@ -11,7 +11,7 @@ Repair Status.
 > diagnosis. Always consult a qualified technician before making final repair
 > decisions.
 
----
+
 
 ## 1. Prerequisites
 
