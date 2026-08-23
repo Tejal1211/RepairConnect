@@ -23,7 +23,7 @@ Repair Status.
 RepairConnect runs a complete, working demo **without** any of the optional
 credentials — see "Demo mode" below.
 
----
+
 
 ## 2. Project Architecture
 
