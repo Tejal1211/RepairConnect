@@ -41,7 +41,7 @@ JSON repair report, scores it with the transparent, rule-based
 `repair_engine.py`, and persists everything through `data_store.py` (Supabase
 if configured, otherwise in-memory).
 
----
+
 
 ## 3. Backend installation
 
