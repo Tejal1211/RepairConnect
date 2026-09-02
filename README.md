@@ -27,7 +27,7 @@ credentials — see "Demo mode" below.
 
 ## 2. Project Architecture
 
-```
+
 repairconnect/
 ├── frontend/        React + Vite + Tailwind (port 5173)
 ├── backend/          FastAPI + OpenCV + Gemini (port 8000)
