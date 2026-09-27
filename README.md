@@ -32,7 +32,7 @@ repairconnect/
 ├── frontend/        React + Vite + Tailwind (port 5173)
 ├── backend/          FastAPI + OpenCV + Gemini (port 8000)
 └── database/         schema.sql for Supabase / PostgreSQL
-```
+
 
 Request flow: the frontend calls the FastAPI backend, which runs the image
 through OpenCV (`image_processor.py`) for a quality check, sends the
