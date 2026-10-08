@@ -13,7 +13,7 @@ Repair Status.
 
 
 
-## 1. Prerequisites
+# 1. Prerequisites
 
 - **Node.js** 18+ and npm
 - **Python** 3.11+
@@ -25,7 +25,7 @@ credentials — see "Demo mode" below.
 
 
 
-## 2. Project Architecture
+## 2. Project Architecture :
 
 
 repairconnect/
